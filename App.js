@@ -28,11 +28,7 @@ class App extends Component {
   }
 
   //bind ArrowRight keydown event
-  componentDidMount(event) {
-    if (event.key === "ArrowRight") {
-      this.setState({ ballPosition: { left: "5px" } });
-    }
-  }
+  componentDidMount() {}
 
   render() {
     return <div className="playground">{this.renderChoice()}</div>;
