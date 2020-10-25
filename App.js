@@ -29,7 +29,7 @@ class App extends Component {
 
   //bind ArrowRight keydown event
   componentDidMount(event) {
-    if (event.shiftKey) {
+    if (event.key === "ArrowRight") {
       this.setState({ ballPosition: { left: "5px" } });
     }
   }
